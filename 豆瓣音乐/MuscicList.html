@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+		<meta name="misapplication-tap-highlight" content="no" />
+		<meta name="HandheldFriendly" content="true" />
+		<meta name="MobileOptimized" content="320" />
+		<title>详情页</title>
+		<link rel="stylesheet" href="css/MusicList.css" />
+		<script src="js/jQuery.js"></script>
+		<script src="js/iscroll.js"></script>
+		<script src="js/MusicList.js"></script>
+	</head>
+
+	<body>
+		<header>
+			<div class="left"></div>
+			<div class="title">分类浏览</div>
+		</header>
+
+		<section>
+			<div class="music-img">
+				<img src="images/9.jpg" alt="" />
+			</div>
+			<div class="music-title">
+				<h3>防磁的词</h3>
+				<p class="pai">流派:中国风</p>
+				<p>成员:</p>
+				<p>5461关注</p>
+			</div>
+			<div class="share">
+				<a href="javascript:;">喜欢</a>
+				<a href="javascript:;">分享</a>
+			</div>
+		</section>
+		<nav id="nav">
+			<ul>
+				<li class="now">
+					<a href="javascript:;">曲库</a>
+				</li>
+				<li>
+					<a href="javascript:;">活动</a>
+				</li>
+				<li>
+					<a href="javascript:;">相册</a>
+				</li>
+				<li>
+					<a href="javascript:;">动态</a>
+				</li>
+				<li>
+					<a href="javascript:;">留言</a>
+				</li>
+			</ul>
+		</nav>
+		<div id="content">
+			<ul class="music_lsit">
+				<!--<li>
+					<div class="music-img">
+						<img src="images/9.jpg" alt="" />
+					</div>
+					<div class="music-title">
+						<p>來日方長（獨唱版）</p>
+						<span>黃齡</span>
+					</div>
+					<div class="musi-play">
+						<img src="images/play.png" alt="" />
+					</div>
+				</li>-->
+			</ul>
+		</div>
+		<div class="play" id="play">
+			<div class="music-img"><img src="images/9.jpg" alt="" /></div>
+			<div class="music-title">
+				<p>来日方长</p>
+				<span>-00.25</span>
+			</div>
+			<div class="music-play">
+				<ul>
+					<li>
+						<a class="Pause" href="javascript:;">暂停/播放</a>
+					</li>
+					<li>
+						<a class="down_music" href="javascript:;">下一曲</a>
+					</li>
+					<li>
+						<a href="javascript:;">分享</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="scrollX">
+			<div class="sc"></div>
+		</div>
+		<div class="kong">当前没有正在播放的歌曲</div>
+		<footer>
+			<ul class="footerNav">
+				<li class="index">热门排行</li>
+				<li>分类浏览</li>
+				<li>我喜欢的</li>
+				<li>
+					<a href="javascript:;"></a>
+				</li>
+				<li id="Zplay">正在播放</li>
+			</ul>
+			<audio src="" id="audio" autobuffer></audio>
+		</footer>
+	</body>
+
+</html>

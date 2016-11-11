@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+		<meta name="misapplication-tap-highlight" content="no" />
+		<meta name="HandheldFriendly" content="true" />
+		<meta name="MobileOptimized" content="320" />
+		<title>分类浏览</title>
+		<link rel="stylesheet" href="css/ClassBro.css" />
+		<script src="js/jQuery.js"></script>
+		<script src="js/iscroll.js"></script>
+		<script src="js/ClassBro.js"></script>
+	</head>
+
+	<body>
+		<header>
+			<div class="left"></div>
+			<div class="title">分类浏览</div>
+		</header>
+		<nav>
+			<form action="search_form">
+
+				<input type="text" id="text" value="" name="" placeholder="音乐人、DJ、流派、风格..." autocomplete="off" />
+				<input type="submit" id="submit" value="" name="" />
+				<div class="cancel_btn">取消</div>
+			</form>
+		</nav>
+		<div class="box">
+			<ul class="MusicType">
+				<li key='cn_man_all'>华语男</li>
+				<li key='cn_woman_all'>华语女</li>
+				<li key='cn_team_all'>华语组合</li>
+				<li key='k_man_all'>韩国男</li>
+				<li key='k_woman_all'>韩国女</li>
+				<li key='k_team_all'>韩国组合</li>
+				<li key='j_man_all'>日本男</li>
+				<li key='j_woman_all'>日本女</li>
+				<li key='j_team_all'>日本组合</li>
+				<li key='eu_man_all'>欧美男</li>
+				<li key='eu_man_all'>欧美女</li>
+				<li key='eu_man_all'>欧美组合</li>
+				<li key='c_orchestra_all'>乐团</li>
+				<li key='c_performer_all'>演奏家</li>
+				<li key='c_composer_all'>作曲家</li>
+				<li key='c_cantor_all'>指挥家</li>
+				<li key='other_other_all'>其他</li>
+			</ul>
+		</div>
+
+		<div class="music_List" id="music_List">
+			<ul>
+				<li key='cn_man_all'>华语男<div class="right"><img src="images/forward.png" alt="" /></div></li>
+				<li key='cn_woman_all'>华语女<div class="right"><img src="images/forward.png" alt="" /></div></li>
+				<li key='cn_team_all'>华语组合<div class="right"><img src="images/forward.png" alt="" /></div></li>
+				<li key='k_man_all'>韩国男<div class="right"><img src="images/forward.png" alt="" /></div></li>
+				<li key='k_woman_all'>韩国女<div class="right"><img src="images/forward.png" alt="" /></div></li>
+				<li key='k_team_all'>韩国组合<div class="right"><img src="images/forward.png" alt="" /></div></li>
+				<li key='j_man_all'>日本男<div class="right"><img src="images/forward.png" alt="" /></div></li>
+				<li key='j_woman_all'>日本女<div class="right"><img src="images/forward.png" alt="" /></div></li>
+				<li key='j_team_all'>日本组合<div class="right"><img src="images/forward.png" alt="" /></div></li>
+				<li key='eu_man_all'>欧美男<div class="right"><img src="images/forward.png" alt="" /></div></li>
+				<li key='eu_man_all'>欧美女<div class="right"><img src="images/forward.png" alt="" /></div></li>
+				<li key='eu_man_all'>欧美组合<div class="right"><img src="images/forward.png" alt="" /></div></li>
+				<li key='c_orchestra_all'>乐团<div class="right"><img src="images/forward.png" alt="" /></div></li>
+				<li key='c_performer_all'>演奏家<div class="right"><img src="images/forward.png" alt="" /></div></li>
+				<li key='c_composer_all'>作曲家<div class="right"><img src="images/forward.png" alt="" /></div></li>
+				<li key='c_cantor_all'>指挥家<div class="right"><img src="images/forward.png" alt="" /></div></li>
+				<li key='other_other_all'>其他<div class="right"><img src="images/forward.png" alt="" /></div></li>
+			</ul>
+		</div>
+		<div class="music_name" id="music_name">
+			<ul>
+				<!--<li>
+					<div class="music-img"><img src="images/9.jpg" alt="" /></div>
+					<div class="title">
+						<h4>薛之谦</h4>
+						<p>华语男</p>
+						<span>5622125关注</span>
+					</div>
+					<div class="love"></div>
+				</li>-->
+			</ul>
+		</div>
+		<div class="play" id="play">
+			<div class="music-img"><img src="images/9.jpg" alt="" /></div>
+			<div class="music-title">
+				<p>来日方长</p>
+				<span>-00.25</span>
+			</div>
+			<div class="music-play">
+				<ul>
+					<li>
+						<a class="Pause" href="javascript:;">暂停/播放</a>
+					</li>
+					<li>
+						<a class="down_music" href="javascript:;">下一曲</a>
+					</li>
+					<li>
+						<a href="javascript:;">分享</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="scrollX">
+			<div class="sc"></div>
+		</div>
+		<div class="kong">当前没有正在播放的歌曲</div>
+		<footer>
+			<ul class="footerNav">
+				<li class="index">热门排行</li>
+				<li>分类浏览</li>
+				<li>我喜欢的</li>
+				<li>
+					<a href="javascript:;"></a>
+				</li>
+				<li id="Zplay">正在播放</li>
+			</ul>
+		</footer>
+	</body>
+
+</html>

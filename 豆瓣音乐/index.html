@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+		<meta name="misapplication-tap-highlight" content="no" />
+		<meta name="HandheldFriendly" content="true" />
+		<meta name="MobileOptimized" content="320" />
+		<title>豆瓣音乐人</title>
+		<link rel="stylesheet" href="css/index.css" />
+		<script src="js/jQuery.js"></script>
+		<script src="js/iscroll.js"></script>
+		<script src="js/index.js"></script>
+		<script src="js/lazyload.js"></script>
+	</head>
+
+	<body>
+		<header>
+		豆瓣音樂人
+		</header>
+		<nav>
+			<ul>
+				<li><a href="javascript:;" class="bor music-q">熱門單曲</a></li>
+				<li><a href="javascript:;" class="music-r">熱門音樂人</a></li>
+			</ul>
+		</nav>
+		<section id="section" style="min-height: 5rem;">
+			<div id="song_wrapper">
+				<ul class="music_lsit">
+					<!--<li>
+						<div class="music-img">
+							<img src="images/9.jpg" alt="" />
+							<div class="mask">01</div>
+						</div>
+						<div class="music-title">
+							<p>來日方長（獨唱版）</p>
+							<span>黃齡</span>
+						</div>
+						<div class="musi-play">
+							<img src="images/play.png" alt="" />
+						</div>
+					</li>-->
+				</ul>
+				<ul class="music_rm">
+					<!--<li>
+						<div class="music-img">
+							<img src="images/9.jpg" alt="" />
+						</div>
+						<div class="music-title">
+							<p>周杰伦</p>
+							<span>别名：jie lun</span>
+							<i>4651人关注</i>
+						</div>
+						<div class="music-right">
+							<img src="images/like_s.png" alt="" />
+						</div>
+					</li>-->
+				</ul>
+			</div>
+		</section>
+		<div class="play" id="play">
+			<div class="music-img"><img src="images/9.jpg" alt="" /></div>
+			<div class="music-title">
+				<p>来日方长</p>
+				<span>-00.25</span>
+			</div>
+			<div class="music-play">
+				<ul>
+					<li><a class="Pause" href="javascript:;">暂停/播放</a></li>
+					<li><a class="down_music" href="javascript:;">下一曲</a></li>
+					<li><a href="javascript:;">分享</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="scrollX"><div class="sc"></div></div>
+		<div class="kong">当前没有正在播放的歌曲</div>
+		<footer>
+			<ul class="footerNav">
+				<li>热门排行</li>
+				<li class="type">分类浏览</li>
+				<li>我喜欢的</li>
+				<li><a href="javascript:;"></a></li>
+				<li id="Zplay">正在播放</li>
+			</ul>
+		</footer>
+		<audio src="" id="audio" autobuffer></audio>
+	</body>
+
+</html>
+<script type="text/javascript"> 
+    $("img").lazyload({
+    threshold : 200,
+    event:'mouseover',
+});
+</script> 

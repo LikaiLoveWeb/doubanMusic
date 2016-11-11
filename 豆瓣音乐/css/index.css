@@ -1,0 +1,344 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body,html{
+	width: 100%;
+	height: 100%;
+	border: 0;
+	font-family: "helvetica";
+}
+i,em{
+	font-style: normal;
+}
+body{
+	overflow: hidden;
+}
+img{
+	height: 100%;
+	vertical-align: bottom;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	font-size: 0.12rem;
+	color: #000000;
+}
+html{
+	font-size: 31.25vw;
+}
+header{
+	width: 100%;
+	height: 0.45rem;
+	background: #000;
+	text-align: center;
+	line-height: 0.45rem;
+	color: #fff;
+	font-size: 0.16rem;
+}
+nav{
+	width: 100%;
+	height: 0.38rem;
+	background: #dedede;
+}
+nav ul{
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+nav ul li{
+	flex: 1;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+nav ul li a{
+	width: 100%;
+	padding: 0 0.1rem;
+	line-height: 0.38rem;
+	color: #999;
+}
+nav ul li:first-child a{
+	text-align: right;
+}
+nav ul li a.bor{
+	background: url(../images/current.png)no-repeat 1.2rem bottom;
+	background-size: 12px 8px;
+	color: #000000;
+	color: #000;
+}
+nav ul li a.bor1{
+	background: url(../images/current.png)no-repeat 0.34rem bottom;
+	background-size: 12px 8px;
+	color: #000000;
+	color: #000;
+}
+section{
+	position: absolute;
+	top: 0.83rem;
+	bottom: 0.5rem;
+	width: 100%;
+	background: #F5F5F5;
+}
+#song_wrapper .music_lsit{
+	height: 100%;
+}
+#song_wrapper .music_lsit li{
+	width: 100%;
+	height: 0.65rem;
+	border-bottom: 0.01rem solid #ccc;
+	font-size: 0.14rem;
+	display: flex;
+	position: relative;
+}
+#song_wrapper .music_lsit li .music-img{
+	width: 0.64rem;
+	height: 0.64rem;
+	position: relative;
+}
+#song_wrapper .music_lsit li .music-img .mask{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.5);
+    font-size: 40px;
+    text-align: center;
+    color: rgba(255,255,255,0.7);
+    line-height: 0.64rem;
+}
+#song_wrapper .music_lsit li .music-title{
+	flex: 1;
+	padding-top:0.14rem;
+	padding-left: 0.14rem;
+}
+#song_wrapper .music_lsit li .music-title p{
+	margin-bottom: 0.04rem;
+	color: #222;
+	font-size: 0.14rem;
+	width: 1.8rem;
+	white-space:nowrap; 
+	overflow:hidden; 
+	text-overflow:ellipsis;
+}
+#song_wrapper .music_lsit li .music-title span{
+	color: #777;
+	font-size: 0.12rem;
+}
+#song_wrapper .music_lsit li .musi-play{
+	width: 0.33rem;
+	height: 0.33rem;
+	margin-top: 0.17rem;
+	margin-right: 0.14rem;
+}
+#song_wrapper .music_rm li{
+	height: 0.66rem;
+	width: 100%;
+	border-bottom: 1px solid #ccc;
+	font-size: 0.14rem;
+	display: flex;
+	align-items: center;
+}
+#song_wrapper .music_rm li .music-img{
+	width: 0.65rem;
+	height: 0.65rem;
+	margin-right: 0.15rem;
+}
+#song_wrapper .music_rm li .music-title{
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	font-size: 0.12rem;
+	color: #777;
+	height: 100%;
+	padding-top: 0.10rem;
+}
+#song_wrapper .music_rm li .music-title > *{
+		margin-bottom: 0.04rem;
+}
+#song_wrapper .music_rm li .music-title p{
+	font-size: 0.14rem;
+	color: #222;
+}
+#song_wrapper .music_rm li .music-right{
+	width: 0.46rem;
+	height: 0.46rem;
+	text-align: center;
+	line-height: 0.46rem;
+}
+#song_wrapper .music_rm li .music-right img{
+	width: 0.15rem;
+	height: 0.14rem;
+	vertical-align: middle;
+}
+
+
+
+.play{
+	width: 100%;
+	height: 0.55rem;
+	background: rgba(0,0,0,.9);
+	overflow: hidden;
+	position: absolute;
+	bottom: -0.98rem;
+	left: 0;
+	padding: 0.07rem 0.1rem;
+	display: flex;
+}
+.play .music-img{
+	width: 0.41rem;
+	height: 0.41rem;
+	border: 0.02rem solid #DEDEDE;
+	float: left;
+}
+.play .pp{
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	line-height: 0.45rem;
+	text-align: center;
+	font-size:0.12rem;
+}
+.play .music-img img{
+	width: 100%;
+	vertical-align: bottom;
+	float: left;
+}
+.play .music-title{
+	display: flex;
+	width: 1.2rem;
+	font-size: 0.12rem;
+	color: #DEDEDE;
+	float: left;
+	height: 100%;
+	padding: 0 0.1rem;
+	overflow: hidden;
+	flex-direction: column;
+}
+.play .music-title p{
+	width: 1rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	padding-bottom: 0.1rem;
+}
+.play .music-title span{
+	color: #777;
+	font-size: 0.1rem;
+}
+.play .music-play{
+	float: left;
+	flex: 1;
+}
+.play .music-play ul{
+	display: flex;
+	height: 100%;
+}
+.play .music-play ul li{
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-direction: column;
+}
+.play .music-play ul li a{
+	width: 0.32rem;
+	height: 0.16rem;
+	text-indent: -999px;
+}
+.play .music-play ul li:first-child a{
+	background: url(../images/player.png)no-repeat -0.96rem 0rem;
+	background-size: 1.1rem 0.3rem;
+}
+.play .music-play ul li:nth-child(2) a{
+	background: url(../images/player.png)no-repeat -0.32rem 0rem;
+	background-size: 1.1rem 0.3rem;
+}
+.play .music-play ul li:last-child a{
+	background: url(../images/player.png)no-repeat 0 0rem;
+	background-size: 1.1rem 0.3rem;
+}
+.scrollX{
+	width: 100%;
+	background: rgba(0,0,0,.9);
+	/*background: rgba(255,255,255,0.1);*/
+    overflow: hidden;
+    position: absolute;
+    height: 0.02rem;
+    bottom: -1rem;
+}
+.scrollX .sc{
+	position: absolute;
+    height: 100%;
+    width: 50%;
+    background: #dedede;
+}
+.kong{
+	width: 100%;
+	height: 0.50rem;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: #000000;
+	color: #fff;
+	line-height: 0.50rem;
+	text-align: center;
+	font-size: 0.14rem;
+}
+footer{
+	width: 100%;
+	height: 0.5rem;
+	background: #000;
+	position: fixed;
+	bottom: 0;
+	padding: 0 0.1rem 0 0.1rem;
+}
+footer .footerNav{
+	display: flex;
+	width: 100%;
+	height: 100%;
+}
+footer .footerNav li{
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-content: center;
+	text-align: center;
+	color: #fff;
+	font-size: 0.09rem;
+	padding-bottom: 0.02rem;
+}
+footer .footerNav li:nth-child(1){
+	background: url(../images/toplist_current.png)no-repeat center center;
+	background-size: 0.58rem 0.5rem;
+}
+footer .footerNav li:nth-child(2){
+	background: url(../images/search.png)no-repeat center center;
+	background-size: 0.58rem 0.5rem;
+}
+footer .footerNav li:nth-child(3){
+	background: url(../images/like.png)no-repeat center center;
+	background-size: 0.58rem 0.5rem;
+}
+footer .footerNav li:nth-child(4){
+	width: 0.18rem;
+	height: 100%;
+	flex: 0;
+	padding: 0.05rem 0.2rem ;
+}
+footer .footerNav li:nth-child(4) a{
+	border-right: 1px solid #444;
+	height: 100%;
+	width: 100%;
+}
+footer .footerNav li:nth-child(5){
+	background: url(../images/playing.png)no-repeat center center;
+	background-size: 0.58rem 0.5rem;
+	color: #fff;
+}
+
